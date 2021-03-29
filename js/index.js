@@ -42,7 +42,7 @@ setQuote();
 const background = new DOMReference('background');
 const hello = new DOMReference('hello');
 const hour = dayjs().hour();
-const isMorning = hour >= 7 && hour <= 19;
+const isMorning = hour >= 7 && hour < 19;
 
 if (!isMorning) {
   background.removeClass('background--light');
